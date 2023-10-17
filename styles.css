@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    font-size: 20px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+#display {
+    grid-column: span 4;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+}
+
+.operator {
+    background-color: #ff9a00;
+}
+
+.number {
+    background-color: #444;
+}
+
+.calculate {
+    background-color: #ff5e00;
+}
+
+.clear {
+    background-color: #ff0000;
+}
+
+/* Scientific Calculator Button Styles */
+.scientific-calculator {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+
+.scientific-calculator button {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scientific-calculator button:hover {
+    background-color: #555;
+}
+
+/* Hide scientific calculator by default */
+.scientific-calculator.hidden {
+    display: none;
+}
